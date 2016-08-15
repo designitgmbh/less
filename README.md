@@ -21,3 +21,6 @@ Then just adjust the API_URL constant in app/config.ts to point to your local in
 
 ## Run on your Phone
 To run this app on your phone you need to add the specific platform and build the package for your device. More information in the [Ionic Documentation](http://ionicframework.com/docs/v2/getting-started/installation/).
+
+### Android
+If you want to get started right away and are more interested in the look & feel of an ionic 2 hybrid app, then you can just check out our pre-built apk's: [1.0 Release](https://github.com/designitgmbh/less/releases/tag/1.0)
