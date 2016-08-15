@@ -1,0 +1,6 @@
+<ion-list radio-group [(ngModel)]="question.answer">
+    <ion-item *ngFor="let choice of question.choices">
+        <ion-label>{{choice}}</ion-label>
+        <ion-radio value="{{choice == 'Yes'}}"></ion-radio>
+    </ion-item>
+</ion-list>

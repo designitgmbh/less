@@ -1,0 +1,9 @@
+<ion-list>
+    <ion-list-header>
+        Studies
+    </ion-list-header>
+    <ion-item *ngFor="let study of studies">
+        <study-label [study]="study"></study-label>
+        <button outline item-right (click)="openStudy(study)">Start</button>
+    </ion-item>
+</ion-list>

@@ -1,0 +1,7 @@
+<question-label [question]="question"></question-label>
+<div *ngIf="questionType == 'BooleanQuestion'">
+    <boolean-question-overview [question]="question"></boolean-question-overview>
+</div>
+<div *ngIf="questionType == 'FreetextQuestion'">
+    <freetext-question-overview [question]="question"></freetext-question-overview>
+</div>

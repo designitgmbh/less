@@ -1,0 +1,66 @@
+{
+  "studies": [
+    {
+      "name": "WebApp Study",
+      "comment": "This example should show, how you could build a simple study.",
+      "modules": [
+        {
+          "name": "Angular",
+          "type": "Questionnaire",
+          "questions": [
+            {
+              "name": "Angular 2",
+              "type": "BooleanQuestion",
+              "question": "Do you think Angular 2 is cooler than Angular 1.x?"
+            },
+            {
+              "name": "JavaScript ES6",
+              "type": "BooleanQuestion",
+              "question": "Do you think that the new ES6 features are useful?"
+            },
+            
+            {
+              "name": "Your Experience",
+              "type": "FreetextQuestion",
+              "question": "Please describe your personal experience with Angular 2"
+            }
+          ]
+        },
+        {
+          "name": "React Native",
+          "type": "Questionnaire",
+          "questions": [
+            {
+              "name": "React Native",
+              "type": "BooleanQuestion",
+              "question": "Do you think React Native is cooler than Ionic?"
+            },
+            {
+              "name": "Your Experience",
+              "type": "FreetextQuestion",
+              "question": "Please describe your experience with React Native"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Food Study",
+      "comment": "This study really just exists to show you that we can have more than one study.",
+      "modules": [
+        {
+          "name": "How do you prepare food",
+          "type": "Questionnaire",
+          "questions": [
+            {
+              "name": "Food Selection",
+              "type": "FreetextQuestion",
+              "question": "On which criteria do you select food?"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "studyResults": []
+}

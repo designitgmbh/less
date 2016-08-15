@@ -1,0 +1,12 @@
+<ion-list>
+    <ion-list-header>
+        Modules
+    </ion-list-header>
+    <ion-item *ngFor="let module of modules">
+        <module-label [module]="module"></module-label>
+        <button outline item-right (click)="activate(module)">
+            <span *ngIf='!module.passed'>Start</span>
+            <span *ngIf='module.passed'>Review</span>
+        </button>
+    </ion-item>
+</ion-list>

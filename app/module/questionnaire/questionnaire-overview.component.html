@@ -1,0 +1,12 @@
+<ion-badge item-right>{{iterator + 1}} of {{questionnaire.questions.length}}</ion-badge>
+<question-overview [question]="question"></question-overview>
+
+<button fab fab-left fab-bottom (click)="previous()" *ngIf="iterator > 0">
+    <ion-icon name="arrow-back"></ion-icon>
+</button>
+<button fab fab-right fab-bottom (click)="next()" *ngIf="iterator + 1 < questionnaire.questions.length" [disabled]="!question.answered">
+    <ion-icon name="arrow-forward"></ion-icon>
+</button>
+<button fab fab-right fab-bottom (click)="finish()" *ngIf="iterator + 1 == questionnaire.questions.length" [disabled]="!question.answered">
+    <ion-icon name="navigate"></ion-icon>
+</button>
